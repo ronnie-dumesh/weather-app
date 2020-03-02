@@ -36,7 +36,7 @@ function sendEmails() {
 }
 
 function sendEmailsHelper() {
-    let db = new sqlite3.Database('./cities.sqlite3');
+    let db = new sqlite3.Database('./weather.sqlite3');
     let sql = "SELECT email, cities.city, tempToday, icon, emailType FROM cities, users WHERE cities.city = users.city";
     
     const emails = {
@@ -68,7 +68,7 @@ function sendEmailsHelper() {
             from: 'ronnieweatherapp@gmail.com',
             to: row['email'],
             subject: emails[row['emailType']],
-            text: "It is " + [row['tempToday']] + " degrees and " + weather[row["icon"]] + " in " + row["city"]
+            text: "Tomorrow it will be " + [row['tempToday']] + " degrees and " + weather[row["icon"]] + " in " + row["city"]
         };
 
         transporter.sendMail(mailOptions, function(error, info){
