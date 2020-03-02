@@ -1,4 +1,4 @@
-//Make drop-down of top 100 menus 
+//Make drop-down of top 100 cities
 window.addEventListener("load", () => {
     let city = document.getElementById("city");
 
@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
                 .catch((error) => {console.error('Error:', error);});
 });
 
-//Submit user email and city 
+//Submit user email and city and alert user if this action is successful 
 $(document).ready(function () {
     $("#registrationForm").submit(function(event) {
         event.preventDefault(); 
