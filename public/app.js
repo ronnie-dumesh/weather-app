@@ -30,7 +30,13 @@ $(document).ready(function () {
                 headers: {'Content-Type': "application/json",},
                 body: JSON.stringify(parsedFormData),})
                     .then(response => {return response;})
-                    .then(data => {console.log('Success:', data);})
-                    .catch((error) => {console.error('Error:', error);});
+                    .then(data => {
+                        console.log('Success:', data);
+                        alert("Your email is now in the database!");
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        alert("Unfortunately, you cannot sign up right now, try again later!");
+                    });
     });
 });
