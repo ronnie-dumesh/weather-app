@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    margin: 20px; 
+    font-size: 30px; 
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(50, 150, 50), rgb(150, 200, 150));
+    font-family: sans-serif;
+    color: white;
+}
+
+form {
+    height: 20vh;
+    width: 50%;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
