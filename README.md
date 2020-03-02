@@ -7,4 +7,4 @@ To be able to use the website (located at public/index.html) for submitting an e
 
 To update tomorrow's weather for each city in cities, run "node weatherUpdate.js"
 
-To send emails to every user in users, run node "emailer.js"
+To send emails to every user in users, run "node emailer.js"
